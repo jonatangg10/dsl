@@ -10,9 +10,9 @@ job('ejemplo2-job-DSL') {
     		choiceParam('planeta', ['Mercurio', 'Venus', 'Tierrra', 'Marte', 'Jupiter', 'Saturno', 'Urano', 'Neptuno'])
     		booleanParam('agente', false)
   		}
-      	triggers {
-    		cron('H/7 * * * *')
-  		}
+      	// triggers {
+    		// cron('H/7 * * * *')
+  		// }
       	steps {
     		shell('echo "Hola mundo"')
   		}
